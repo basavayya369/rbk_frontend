@@ -26,9 +26,10 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 
 // Backend endpoints - replace with your real endpoints
-const PREDICT_ENDPOINT = 'https://rbk-predictor.onrender.com/predict';
-const RETRAIN_ENDPOINT = 'https://rbk-predictor.onrender.com/retrain';
+const API_BASE = "https://rbk-predictor.onrender.com";
 
+const PREDICT_ENDPOINT = `${API_BASE}/predict`;
+const RETRAIN_ENDPOINT = `${API_BASE}/retrain`;
 
 export default function RBKInsightPortal() {
   // Auth & UI
